@@ -10,7 +10,6 @@ class Login extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<Login> {
-
   TextEditingController email = TextEditingController();
   TextEditingController password = TextEditingController();
 
@@ -28,9 +27,10 @@ class _MyHomePageState extends State<Login> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 const Image(image: AssetImage('Assets/images/auth_image.png')),
-                  TextField(
+                TextField(
                   controller: email,
-                  decoration: const InputDecoration(hintText: 'Enter your email'),
+                  decoration:
+                      const InputDecoration(hintText: 'Enter your email'),
                 ),
                 TextField(
                   controller: password,
@@ -38,11 +38,11 @@ class _MyHomePageState extends State<Login> {
                       const InputDecoration(hintText: 'Enter your password'),
                 ),
                 const SizedBox(height: 30),
-                ElevatedButton(onPressed: (){},
-                style: const ButtonStyle(
-                  fixedSize: MaterialStatePropertyAll(Size(150, 50))
-                ), 
-                child: const Text('Log In')),
+                ElevatedButton(
+                    onPressed: () {},
+                    style: const ButtonStyle(
+                        fixedSize: MaterialStatePropertyAll(Size(150, 50))),
+                    child: const Text('Log In')),
               ],
             ),
           ),
