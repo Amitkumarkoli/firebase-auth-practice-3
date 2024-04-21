@@ -1,6 +1,5 @@
 import 'dart:io';
-
-import 'package:firebase_auth_practice3/Screens/login.dart';
+import 'package:firebase_auth_practice3/wrapper.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -26,10 +25,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: Login(title: 'Firebase auth practice 3'),
+      home: Wrapper(),
     );
   }
 }
