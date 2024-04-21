@@ -21,6 +21,7 @@ class _MyHomePageState extends State<Login> {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+          title: const Text('Firebase Auth practice 3'),
         ),
         body: SingleChildScrollView(
           child: Center(
